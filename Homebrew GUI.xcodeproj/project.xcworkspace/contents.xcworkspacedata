@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HomebrewGUI.xcodeproj">
+      location = "self:Homebrew GUI.xcodeproj">
    </FileRef>
 </Workspace>

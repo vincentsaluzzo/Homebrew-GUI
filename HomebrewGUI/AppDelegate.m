@@ -7,19 +7,25 @@
 //
 
 #import "AppDelegate.h"
-#import "BrewInterface.h"
+
+@interface AppDelegate ()
+@property (strong) NSXPCInterface *brewXPCInterface;
+@property (strong) NSXPCConnection *connection;
+
+@end
+
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize AboutDesc;
-- (void)dealloc
-{
-    [super dealloc];
-}
+@synthesize homebrewProxy, brewXPCInterface, connection;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+- (void)applicationWillFinishLaunching:(NSNotification *)aNotification
 {
-    [AboutDesc setStringValue:@"Homebrew is a UNIX package manager for OS X like MacPorts (OS X), Yum (Fedora), Apt (Ubuntu/Debian), etc.\nHomebrew GUI is a user interface for Homebrew command-line tool, to simplify its use (and also for person who detest command-line ;) )"];
+    brewXPCInterface = [NSXPCInterface interfaceWithProtocol:@protocol(LLCXPCHomebrew)];
+    connection = [[NSXPCConnection alloc] initWithServiceName:@"LLC.HomebrewXPC"];
+    [connection setRemoteObjectInterface:brewXPCInterface];
+    [connection resume];
+    homebrewProxy = [connection remoteObjectProxy];
 }
 
 @end

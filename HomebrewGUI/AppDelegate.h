@@ -7,10 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "LLCXPCHomebrewProxy.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet NSTextField *AboutDesc;
-
+@property (weak) IBOutlet NSWindow *window;
+@property (strong) LLCXPCHomebrewProxy *homebrewProxy;
 @end
