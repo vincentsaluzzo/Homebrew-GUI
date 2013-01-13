@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LHBXPCApplicationProxy.h"
 
 @protocol LLCXPCHomebrew <NSObject>
 -(void)installedFormulaList:(void (^)(NSArray *))list;
@@ -16,5 +17,6 @@
 @end
 
 @interface LLCXPCHomebrewProxy : NSObject <LLCXPCHomebrew>
+@property (strong) LHBXPCApplicationProxy *applicationProxy;
 @end
 

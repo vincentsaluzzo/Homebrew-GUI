@@ -3,21 +3,21 @@
 //  HomebrewGUI
 //
 //  Created by Vincent Saluzzo on 06/12/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2011 Labastille Laser Corp. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "LLCXPCHomebrewProxy.h"
-#import "AppDelegate.h"
+#import "LHBAppDelegate.h"
 
-@interface HomebrewController : NSViewController<NSTableViewDataSource, NSTableViewDelegate> {
-    IBOutlet NSTableView* listOfApplicationAlreadyInstalled;
+@interface LHBInstalledViewController : NSViewController<NSTableViewDataSource, NSTableViewDelegate> {
+    IBOutlet NSTableView* installedFormulaTableView;
     IBOutlet NSToolbar* MainToolbar;
     IBOutlet NSToolbarItem* MainToolbarItem_Uninstall;
 }
 
--(IBAction) refreshListOfApplicationAlreadyInstalled:(id)sender;
+-(IBAction) refreshInstalledFormulas:(id)sender;
 -(IBAction) uninstall:(id)sender;
 @property (weak) IBOutlet NSArrayController *installedFormulaArrayController;
-@property (strong) NSArray* arrayOfApplicationInstalled;
+//@property (strong) NSArray* arrayOfApplicationInstalled;
 @end

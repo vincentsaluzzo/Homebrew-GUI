@@ -15,6 +15,8 @@ LLCXPCHomebrewProxy *homebrewProxy;
     [newConnection setExportedInterface:brewXPCInterface];
     homebrewProxy = [[LLCXPCHomebrewProxy alloc] init];
     [newConnection setExportedObject:homebrewProxy];
+    [newConnection setRemoteObjectInterface:[NSXPCInterface interfaceWithProtocol:@protocol(LHBXPCApplication)]];
+    [homebrewProxy setApplicationProxy:[newConnection remoteObjectProxy]];
     [newConnection resume];
     return YES;
 }

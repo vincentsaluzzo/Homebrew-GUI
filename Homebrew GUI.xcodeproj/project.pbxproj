@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1462F53016A300BE00EE9734 /* LHBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462F52F16A300BE00EE9734 /* LHBModel.m */; };
+		1462F53416A30E7700EE9734 /* LHBXPCApplicationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462F53316A30E7700EE9734 /* LHBXPCApplicationProxy.m */; };
 		14B6EA6F16A18FF80050EFC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B6EA6E16A18FF80050EFC2 /* Foundation.framework */; };
 		14B6EA7516A18FF80050EFC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14B6EA7316A18FF80050EFC2 /* InfoPlist.strings */; };
 		14B6EA7816A18FF80050EFC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B6EA7716A18FF80050EFC2 /* main.m */; };
@@ -18,10 +20,10 @@
 		1FE4FE63148E4CDD008EDE8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4FE61148E4CDD008EDE8B /* InfoPlist.strings */; };
 		1FE4FE65148E4CDD008EDE8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4FE64148E4CDD008EDE8B /* main.m */; };
 		1FE4FE69148E4CDD008EDE8B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4FE67148E4CDD008EDE8B /* Credits.rtf */; };
-		1FE4FE6C148E4CDD008EDE8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4FE6B148E4CDD008EDE8B /* AppDelegate.m */; };
+		1FE4FE6C148E4CDD008EDE8B /* LHBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4FE6B148E4CDD008EDE8B /* LHBAppDelegate.m */; };
 		1FE4FE6F148E4CDD008EDE8B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4FE6D148E4CDD008EDE8B /* MainMenu.xib */; };
-		1FE4FE7A148E5FEB008EDE8B /* HomebrewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4FE79148E5FEB008EDE8B /* HomebrewController.m */; };
-		1FE4FECA1490B067008EDE8B /* HomebrewInstallController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4FEC91490B066008EDE8B /* HomebrewInstallController.m */; };
+		1FE4FE7A148E5FEB008EDE8B /* LHBInstalledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4FE79148E5FEB008EDE8B /* LHBInstalledViewController.m */; };
+		1FE4FECA1490B067008EDE8B /* LHBInstallerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4FEC91490B066008EDE8B /* LHBInstallerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1462F52E16A300BE00EE9734 /* LHBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHBModel.h; sourceTree = "<group>"; };
+		1462F52F16A300BE00EE9734 /* LHBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHBModel.m; sourceTree = "<group>"; };
+		1462F53216A30E7700EE9734 /* LHBXPCApplicationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHBXPCApplicationProxy.h; sourceTree = "<group>"; };
+		1462F53316A30E7700EE9734 /* LHBXPCApplicationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHBXPCApplicationProxy.m; sourceTree = "<group>"; };
 		14B6EA6D16A18FF80050EFC2 /* LLC.HomebrewXPC.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLC.HomebrewXPC.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B6EA6E16A18FF80050EFC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		14B6EA7216A18FF80050EFC2 /* HomebrewXPC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomebrewXPC-Info.plist"; sourceTree = "<group>"; };
@@ -69,13 +75,13 @@
 		1FE4FE64148E4CDD008EDE8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1FE4FE66148E4CDD008EDE8B /* Homebrew GUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Homebrew GUI-Prefix.pch"; sourceTree = "<group>"; };
 		1FE4FE68148E4CDD008EDE8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		1FE4FE6A148E4CDD008EDE8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1FE4FE6B148E4CDD008EDE8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1FE4FE6A148E4CDD008EDE8B /* LHBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHBAppDelegate.h; sourceTree = "<group>"; };
+		1FE4FE6B148E4CDD008EDE8B /* LHBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHBAppDelegate.m; sourceTree = "<group>"; };
 		1FE4FE6E148E4CDD008EDE8B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		1FE4FE78148E5FEB008EDE8B /* HomebrewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomebrewController.h; sourceTree = "<group>"; };
-		1FE4FE79148E5FEB008EDE8B /* HomebrewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomebrewController.m; sourceTree = "<group>"; };
-		1FE4FEC81490B066008EDE8B /* HomebrewInstallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomebrewInstallController.h; sourceTree = "<group>"; };
-		1FE4FEC91490B066008EDE8B /* HomebrewInstallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomebrewInstallController.m; sourceTree = "<group>"; };
+		1FE4FE78148E5FEB008EDE8B /* LHBInstalledViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHBInstalledViewController.h; sourceTree = "<group>"; };
+		1FE4FE79148E5FEB008EDE8B /* LHBInstalledViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHBInstalledViewController.m; sourceTree = "<group>"; };
+		1FE4FEC81490B066008EDE8B /* LHBInstallerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHBInstallerViewController.h; sourceTree = "<group>"; };
+		1FE4FEC91490B066008EDE8B /* LHBInstallerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHBInstallerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,14 +171,18 @@
 		1FE4FE5E148E4CDD008EDE8B /* HomebrewGUI */ = {
 			isa = PBXGroup;
 			children = (
-				1FE4FE6A148E4CDD008EDE8B /* AppDelegate.h */,
-				1FE4FE6B148E4CDD008EDE8B /* AppDelegate.m */,
+				1FE4FE6A148E4CDD008EDE8B /* LHBAppDelegate.h */,
+				1FE4FE6B148E4CDD008EDE8B /* LHBAppDelegate.m */,
+				1462F53216A30E7700EE9734 /* LHBXPCApplicationProxy.h */,
+				1462F53316A30E7700EE9734 /* LHBXPCApplicationProxy.m */,
 				1FE4FE6D148E4CDD008EDE8B /* MainMenu.xib */,
 				1FE4FE5F148E4CDD008EDE8B /* Supporting Files */,
-				1FE4FE78148E5FEB008EDE8B /* HomebrewController.h */,
-				1FE4FE79148E5FEB008EDE8B /* HomebrewController.m */,
-				1FE4FEC81490B066008EDE8B /* HomebrewInstallController.h */,
-				1FE4FEC91490B066008EDE8B /* HomebrewInstallController.m */,
+				1462F52E16A300BE00EE9734 /* LHBModel.h */,
+				1462F52F16A300BE00EE9734 /* LHBModel.m */,
+				1FE4FE78148E5FEB008EDE8B /* LHBInstalledViewController.h */,
+				1FE4FE79148E5FEB008EDE8B /* LHBInstalledViewController.m */,
+				1FE4FEC81490B066008EDE8B /* LHBInstallerViewController.h */,
+				1FE4FEC91490B066008EDE8B /* LHBInstallerViewController.m */,
 			);
 			path = HomebrewGUI;
 			sourceTree = "<group>";
@@ -234,7 +244,9 @@
 		1FE4FE4B148E4CDD008EDE8B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LHB;
 				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Labastille Laser Corp";
 			};
 			buildConfigurationList = 1FE4FE4E148E4CDD008EDE8B /* Build configuration list for PBXProject "Homebrew GUI" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -291,9 +303,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FE4FE65148E4CDD008EDE8B /* main.m in Sources */,
-				1FE4FE6C148E4CDD008EDE8B /* AppDelegate.m in Sources */,
-				1FE4FE7A148E5FEB008EDE8B /* HomebrewController.m in Sources */,
-				1FE4FECA1490B067008EDE8B /* HomebrewInstallController.m in Sources */,
+				1FE4FE6C148E4CDD008EDE8B /* LHBAppDelegate.m in Sources */,
+				1FE4FE7A148E5FEB008EDE8B /* LHBInstalledViewController.m in Sources */,
+				1FE4FECA1490B067008EDE8B /* LHBInstallerViewController.m in Sources */,
+				1462F53016A300BE00EE9734 /* LHBModel.m in Sources */,
+				1462F53416A30E7700EE9734 /* LHBXPCApplicationProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

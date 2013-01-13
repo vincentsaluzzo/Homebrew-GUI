@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "LLCXPCHomebrewProxy.h"
+#import "LHBXPCApplicationProxy.h"
 
 @interface LLCXPCListenerDelegate : NSObject <NSXPCListenerDelegate>
 
