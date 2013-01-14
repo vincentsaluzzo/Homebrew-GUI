@@ -65,15 +65,15 @@
 		14B6EA8416A1B5A40050EFC2 /* LLCXPCHomebrewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCXPCHomebrewProxy.h; sourceTree = "<group>"; };
 		14B6EA8516A1B5A40050EFC2 /* LLCXPCHomebrewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCXPCHomebrewProxy.m; sourceTree = "<group>"; };
 		14B6EA9A16A205D70050EFC2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		1FE4FE54148E4CDD008EDE8B /* Homebrew GUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homebrew GUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FE4FE54148E4CDD008EDE8B /* Brewery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brewery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE4FE58148E4CDD008EDE8B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1FE4FE5B148E4CDD008EDE8B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		1FE4FE5C148E4CDD008EDE8B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		1FE4FE5D148E4CDD008EDE8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1FE4FE60148E4CDD008EDE8B /* Homebrew GUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Homebrew GUI-Info.plist"; sourceTree = "<group>"; };
+		1FE4FE60148E4CDD008EDE8B /* Brewery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Brewery-Info.plist"; sourceTree = "<group>"; };
 		1FE4FE62148E4CDD008EDE8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1FE4FE64148E4CDD008EDE8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1FE4FE66148E4CDD008EDE8B /* Homebrew GUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Homebrew GUI-Prefix.pch"; sourceTree = "<group>"; };
+		1FE4FE66148E4CDD008EDE8B /* Brewery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Brewery-Prefix.pch"; sourceTree = "<group>"; };
 		1FE4FE68148E4CDD008EDE8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		1FE4FE6A148E4CDD008EDE8B /* LHBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHBAppDelegate.h; sourceTree = "<group>"; };
 		1FE4FE6B148E4CDD008EDE8B /* LHBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHBAppDelegate.m; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		1FE4FE49148E4CDD008EDE8B = {
 			isa = PBXGroup;
 			children = (
-				1FE4FE5E148E4CDD008EDE8B /* HomebrewGUI */,
+				1FE4FE5E148E4CDD008EDE8B /* Brewery */,
 				14B6EA7016A18FF80050EFC2 /* HomebrewXPC */,
 				1FE4FE57148E4CDD008EDE8B /* Frameworks */,
 				1FE4FE55148E4CDD008EDE8B /* Products */,
@@ -141,7 +141,7 @@
 		1FE4FE55148E4CDD008EDE8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1FE4FE54148E4CDD008EDE8B /* Homebrew GUI.app */,
+				1FE4FE54148E4CDD008EDE8B /* Brewery.app */,
 				14B6EA6D16A18FF80050EFC2 /* LLC.HomebrewXPC.xpc */,
 			);
 			name = Products;
@@ -168,7 +168,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		1FE4FE5E148E4CDD008EDE8B /* HomebrewGUI */ = {
+		1FE4FE5E148E4CDD008EDE8B /* Brewery */ = {
 			isa = PBXGroup;
 			children = (
 				1FE4FE6A148E4CDD008EDE8B /* LHBAppDelegate.h */,
@@ -184,16 +184,17 @@
 				1FE4FEC81490B066008EDE8B /* LHBInstallerViewController.h */,
 				1FE4FEC91490B066008EDE8B /* LHBInstallerViewController.m */,
 			);
+			name = Brewery;
 			path = HomebrewGUI;
 			sourceTree = "<group>";
 		};
 		1FE4FE5F148E4CDD008EDE8B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1FE4FE60148E4CDD008EDE8B /* Homebrew GUI-Info.plist */,
+				1FE4FE60148E4CDD008EDE8B /* Brewery-Info.plist */,
 				1FE4FE61148E4CDD008EDE8B /* InfoPlist.strings */,
 				1FE4FE64148E4CDD008EDE8B /* main.m */,
-				1FE4FE66148E4CDD008EDE8B /* Homebrew GUI-Prefix.pch */,
+				1FE4FE66148E4CDD008EDE8B /* Brewery-Prefix.pch */,
 				1FE4FE67148E4CDD008EDE8B /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -219,9 +220,9 @@
 			productReference = 14B6EA6D16A18FF80050EFC2 /* LLC.HomebrewXPC.xpc */;
 			productType = "com.apple.product-type.bundle";
 		};
-		1FE4FE53148E4CDD008EDE8B /* Homebrew GUI */ = {
+		1FE4FE53148E4CDD008EDE8B /* Brewery */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1FE4FE72148E4CDD008EDE8B /* Build configuration list for PBXNativeTarget "Homebrew GUI" */;
+			buildConfigurationList = 1FE4FE72148E4CDD008EDE8B /* Build configuration list for PBXNativeTarget "Brewery" */;
 			buildPhases = (
 				1FE4FE50148E4CDD008EDE8B /* Sources */,
 				1FE4FE51148E4CDD008EDE8B /* Frameworks */,
@@ -233,9 +234,9 @@
 			dependencies = (
 				14B6EA7F16A1905C0050EFC2 /* PBXTargetDependency */,
 			);
-			name = "Homebrew GUI";
+			name = Brewery;
 			productName = HomebrewGUI;
-			productReference = 1FE4FE54148E4CDD008EDE8B /* Homebrew GUI.app */;
+			productReference = 1FE4FE54148E4CDD008EDE8B /* Brewery.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -248,7 +249,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Labastille Laser Corp";
 			};
-			buildConfigurationList = 1FE4FE4E148E4CDD008EDE8B /* Build configuration list for PBXProject "Homebrew GUI" */;
+			buildConfigurationList = 1FE4FE4E148E4CDD008EDE8B /* Build configuration list for PBXProject "Brewery" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -260,7 +261,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1FE4FE53148E4CDD008EDE8B /* Homebrew GUI */,
+				1FE4FE53148E4CDD008EDE8B /* Brewery */,
 				14B6EA6C16A18FF80050EFC2 /* HomebrewXPC */,
 			);
 		};
@@ -448,9 +449,9 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HomebrewGUI/Homebrew GUI-Prefix.pch";
-				INFOPLIST_FILE = "HomebrewGUI/Homebrew GUI-Info.plist";
-				PRODUCT_NAME = "Homebrew GUI";
+				GCC_PREFIX_HEADER = "HomebrewGUI/Brewery-Prefix.pch";
+				INFOPLIST_FILE = "HomebrewGUI/Brewery-Info.plist";
+				PRODUCT_NAME = Brewery;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -461,9 +462,9 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HomebrewGUI/Homebrew GUI-Prefix.pch";
-				INFOPLIST_FILE = "HomebrewGUI/Homebrew GUI-Info.plist";
-				PRODUCT_NAME = "Homebrew GUI";
+				GCC_PREFIX_HEADER = "HomebrewGUI/Brewery-Prefix.pch";
+				INFOPLIST_FILE = "HomebrewGUI/Brewery-Info.plist";
+				PRODUCT_NAME = Brewery;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -480,7 +481,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1FE4FE4E148E4CDD008EDE8B /* Build configuration list for PBXProject "Homebrew GUI" */ = {
+		1FE4FE4E148E4CDD008EDE8B /* Build configuration list for PBXProject "Brewery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1FE4FE70148E4CDD008EDE8B /* Debug */,
@@ -489,7 +490,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1FE4FE72148E4CDD008EDE8B /* Build configuration list for PBXNativeTarget "Homebrew GUI" */ = {
+		1FE4FE72148E4CDD008EDE8B /* Build configuration list for PBXNativeTarget "Brewery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1FE4FE73148E4CDD008EDE8B /* Debug */,
