@@ -44,6 +44,10 @@
     }
 }
 
+- (IBAction)showHomebrewOutput:(id)sender {
+    [_homebrewOutputWindow makeKeyAndOrderFront:sender];
+}
+
 #pragma mark - NSTableView Delegate
 
 -(void) tableViewSelectionDidChange:(NSNotification *)notification {

@@ -16,7 +16,8 @@
 @synthesize installButton, availableFormulas, formulaArrayController;
 
 -(IBAction) showInstallWindow:(id)sender {
-    [self.view.window orderFrontRegardless];
+    [self.view.window makeKeyAndOrderFront:sender];
+    [[(LHBAppDelegate *)[NSApp delegate] homebrewModel] addObserver:self forKeyPath:@"installedFormulas" options:(NSKeyValueObservingOptionNew) context:NULL];
     [self refreshFormulasAvailableForInstallation];
 }
 
@@ -41,6 +42,13 @@
         //NSLog(@"Array Controller arrangedObjects: %@", [formulaArrayController arrangedObjects]);
         [availableFormulasTableView reloadData];
     }];
+}
+
+#pragma mark — Key-Value-Observing
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    if ([keyPath isEqual:@"installedFormulas"]) {
+        [self refreshFormulasAvailableForInstallation];
+    }
 }
 
 #pragma mark - NSTableView Delegate

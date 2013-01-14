@@ -21,5 +21,6 @@
 @property (weak) IBOutlet NSButton *installButton;
 @property (weak) IBOutlet NSSearchFieldCell *formulaSearchFieldCell;
 @property (weak) IBOutlet NSArrayController *formulaArrayController;
+
 @property (strong) NSMutableArray* availableFormulas;
 @end

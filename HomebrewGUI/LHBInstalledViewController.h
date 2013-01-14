@@ -18,6 +18,8 @@
 
 -(IBAction) refreshInstalledFormulas:(id)sender;
 -(IBAction) uninstall:(id)sender;
+- (IBAction)showHomebrewOutput:(id)sender;
 @property (weak) IBOutlet NSArrayController *installedFormulaArrayController;
+@property (unsafe_unretained) IBOutlet NSWindow *homebrewOutputWindow;
 //@property (strong) NSArray* arrayOfApplicationInstalled;
 @end
