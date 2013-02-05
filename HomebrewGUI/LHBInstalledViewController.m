@@ -27,6 +27,9 @@
 -(IBAction) refreshInstalledFormulas:(id)sender {
     [[(LHBAppDelegate *)[NSApp delegate] homebrewProxy] installedFormulaList:^(NSArray *list) {
         //NSLog(@"Received installed formula listing via XPC: %@", list);
+        NSRange r = NSMakeRange(10, 42);
+        NSValue *rangeValue = [NSValue valueWithBytes:&r objCType:@encode(NSRange)];
+        NSLog(@"%@", rangeValue);
         [[(LHBAppDelegate *)[NSApp delegate] homebrewModel] setInstalledFormulas:list] ;
         [installedFormulaArrayController setContent:[[(LHBAppDelegate *)[NSApp delegate] homebrewModel] installedFormulas]];
     }];
@@ -45,7 +48,16 @@
 }
 
 - (IBAction)showHomebrewOutput:(id)sender {
-    [_homebrewOutputWindow makeKeyAndOrderFront:sender];
+    if ([sender isEqual:_homebrewOutputMenuItem] && ![_homebrewOutputWindow isVisible]) {
+        [_homebrewOutputMenuItem setTitle:@"Hide Homebrew Output"];
+    } else {
+        [_homebrewOutputMenuItem setTitle:@"Show Homebrew Output"];
+    }
+    if ([_homebrewOutputWindow isVisible]) {
+        [_homebrewOutputWindow close];
+    } else {
+        [_homebrewOutputWindow makeKeyAndOrderFront:sender];
+    }
 }
 
 #pragma mark - NSTableView Delegate

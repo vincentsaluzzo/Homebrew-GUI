@@ -10,6 +10,7 @@
 
 @implementation LHBXPCApplicationProxy
 -(void)report:(NSString *)output {
+    BOOL foundBrew = NO;
     if ([output rangeOfCharacterFromSet:[NSCharacterSet characterSetWithCharactersInString:@"🍺"]].location != NSNotFound) {
         NSError *regularExpressionError = [[NSError alloc] init];
         NSRegularExpression *formulaNameExpression = [NSRegularExpression regularExpressionWithPattern:@"🍺  \\/usr\\/local\\/Cellar\\/([\\w\\d-]+)\\/" options:0 error:&regularExpressionError];
@@ -25,9 +26,12 @@
         [completedBrewNotification setSoundName:NSUserNotificationDefaultSoundName];
         //[completedBrewNotification setSubtitle:@"The formula has completed installation"];
         [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification:completedBrewNotification];
+        foundBrew = YES;
     }
     NSAttributedString *outputString = [[NSAttributedString alloc] initWithString:output attributes:@{NSFontAttributeName:[NSFont fontWithName:@"Menlo" size:12.0]}];
     [[[self homebrewOutputTextView] textStorage] performSelectorOnMainThread:@selector(appendAttributedString:) withObject:outputString waitUntilDone:YES];
-    [[self homebrewOutputTextView] performSelectorOnMainThread:@selector(scrollToEndOfDocument:) withObject:nil waitUntilDone:YES];
+    if (foundBrew) {
+        [[self homebrewOutputTextView] performSelectorOnMainThread:@selector(scrollToEndOfDocument:) withObject:nil waitUntilDone:YES];
+    }
 }
 @end
