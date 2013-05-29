@@ -10,4 +10,5 @@
 
 @interface LHBModel : NSObject
 @property (strong) NSArray *installedFormulas;
++(id)sharedInstance;
 @end

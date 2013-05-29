@@ -20,6 +20,8 @@
 -(IBAction) refreshInstalledFormulas:(id)sender;
 -(IBAction) uninstall:(id)sender;
 - (IBAction)showHomebrewOutput:(id)sender;
+-(void) updateHomebrewStatus;
+
 @property (weak) IBOutlet NSArrayController *installedFormulaArrayController;
 @property (weak) IBOutlet NSTextField *statusTextField;
 @property (unsafe_unretained) IBOutlet NSWindow *homebrewOutputWindow;

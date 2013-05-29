@@ -6,16 +6,15 @@
 //  Copyright (c) 2013 Labastille Laser Corp. All rights reserved.
 //
 
-#import "LHBModelTest.h"
+#import "LHBModel.h"
+#import "Kiwi.h"
 
-@implementation LHBModelTest
-@synthesize testModel;
+SPEC_BEGIN(LHBModelSpec)
 
--(void)setUp {
-    testModel = [[LHBModel alloc] init];
-}
+describe(@"Model", ^{
+    it(@"should be empty before fetching installed formulas", ^{
+        [[[LHBModel sharedInstance] installedFormulas] shouldBeNil];
+    });
+});
 
--(void)testModelEmptyBeforeFetchingInstalledFormulas {
-    STAssertNil([testModel installedFormulas], @"No  installed formulas should be listed by the model when initialized");
-}
-@end
+SPEC_END

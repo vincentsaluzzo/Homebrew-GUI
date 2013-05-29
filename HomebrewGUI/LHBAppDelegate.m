@@ -17,20 +17,12 @@
 @implementation LHBAppDelegate
 LLCXPCHomebrewProxy *homebrewProxy;
 LHBXPCApplicationProxy *applicationProxy;
-LHBModel *homebrewModel;
 @synthesize window = _window;
 @synthesize brewXPCInterface, connection;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     
-}
-
-- (LHBModel *)homebrewModel {
-    if (!homebrewModel) {
-        homebrewModel = [[LHBModel alloc] init];
-    }
-    return homebrewModel;
 }
 
 - (LLCXPCHomebrewProxy *)homebrewProxy {
@@ -41,11 +33,16 @@ LHBModel *homebrewModel;
         [connection setExportedInterface:[NSXPCInterface interfaceWithProtocol:@protocol(LHBXPCApplication)]];
         applicationProxy = [[LHBXPCApplicationProxy alloc] init];
         applicationProxy.homebrewOutputTextView = self.homebrewOutputTextView;
+        applicationProxy.homebrewStatusTextField = self.homebrewStatusTextField;
         [connection setExportedObject:applicationProxy];
         [connection resume];
         homebrewProxy = [connection remoteObjectProxy];
     }
     return homebrewProxy;
+}
+
+-(void)scrollOutputToEnd {
+    [[self homebrewOutputTextView] performSelectorOnMainThread:@selector(scrollToEndOfDocument:) withObject:nil waitUntilDone:YES];
 }
 
 @end

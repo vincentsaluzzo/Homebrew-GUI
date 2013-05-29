@@ -17,7 +17,7 @@
 
 -(IBAction) showInstallWindow:(id)sender {
     [self.view.window makeKeyAndOrderFront:sender];
-    [[(LHBAppDelegate *)[NSApp delegate] homebrewModel] addObserver:self forKeyPath:@"installedFormulas" options:(NSKeyValueObservingOptionNew) context:NULL];
+    [[LHBModel sharedInstance] addObserver:self forKeyPath:@"installedFormulas" options:(NSKeyValueObservingOptionNew) context:NULL];
     [self refreshFormulasAvailableForInstallation];
 }
 
@@ -27,7 +27,7 @@
     [[(LHBAppDelegate *)[NSApp delegate] homebrewProxy] install:formulaToInstall completion:^(NSString *output){NSLog(@"Output from installation via XPC: %@",output);}];
         [[(LHBAppDelegate *)[NSApp delegate] homebrewProxy] installedFormulaList:^(NSArray *list) {
             NSLog(@"Received installed formula listing via XPC: %@", list);
-            [[(LHBAppDelegate *)[NSApp delegate] homebrewModel] setInstalledFormulas:list];
+            [[LHBModel sharedInstance] setInstalledFormulas:list];
             [self refreshFormulasAvailableForInstallation];
         }];
     }
@@ -37,7 +37,7 @@
     [[(LHBAppDelegate *)[NSApp delegate] homebrewProxy] search:@"" completion:^(NSString *output){
         //NSLog(@"Output from search via XPC: %@",output);
         availableFormulas = [[output componentsSeparatedByString:@"\n"] mutableCopy];
-        [availableFormulas removeObjectsInArray:[[[NSApp delegate] homebrewModel] installedFormulas]];
+        [availableFormulas removeObjectsInArray:[[LHBModel sharedInstance] installedFormulas]];
         [formulaArrayController setContent:availableFormulas];
         //NSLog(@"Array Controller arrangedObjects: %@", [formulaArrayController arrangedObjects]);
         [availableFormulasTableView reloadData];

@@ -17,5 +17,8 @@
 @property (strong, readonly) LLCXPCHomebrewProxy *homebrewProxy;
 @property (strong, readonly) LHBXPCApplicationProxy *applicationProxy;
 @property (strong) IBOutlet NSTextView *homebrewOutputTextView;
-@property (strong, readonly) LHBModel *homebrewModel;
+@property (weak) IBOutlet NSTextField *homebrewStatusTextField;
+
+-(void)scrollOutputToEnd;
+
 @end

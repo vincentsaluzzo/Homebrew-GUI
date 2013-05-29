@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1080</int>
-		<string key="IBDocument.SystemVersion">12C60</string>
+		<string key="IBDocument.SystemVersion">12D78</string>
 		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
-		<string key="IBDocument.AppKitVersion">1187.34</string>
-		<string key="IBDocument.HIToolboxVersion">625.00</string>
+		<string key="IBDocument.AppKitVersion">1187.37</string>
+		<string key="IBDocument.HIToolboxVersion">626.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			<string key="NS.object.0">3084</string>
@@ -955,7 +955,7 @@
 						<reference ref="462292716"/>
 						<reference ref="765693916"/>
 					</array>
-					<array key="NSToolbarIBDefaultItems">
+					<array class="NSMutableArray" key="NSToolbarIBDefaultItems">
 						<reference ref="830471902"/>
 						<reference ref="24233787"/>
 						<reference ref="366981617"/>
@@ -1187,13 +1187,16 @@
 					<reference key="NSSuperview"/>
 					<reference key="NSNextKeyView" ref="625376237"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1920, 1178}}</string>
 				<string key="NSMinSize">{340, 398}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
 			</object>
 			<object class="NSCustomObject" id="976324537">
 				<string key="NSClassName">LHBAppDelegate</string>
+			</object>
+			<object class="NSCustomObject" id="581770410">
+				<string key="NSClassName">LHBModel</string>
 			</object>
 			<object class="NSArrayController" id="185241347">
 				<bool key="NSEditable">YES</bool>
@@ -1226,7 +1229,7 @@
 				<nil key="NSViewClass"/>
 				<nil key="NSUserInterfaceItemIdentifier"/>
 				<object class="NSView" key="NSWindowView" id="312609963">
-					<reference key="NSNextResponder"/>
+					<nil key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<array class="NSMutableArray" key="NSSubviews">
 						<object class="NSSearchField" id="121623818">
@@ -1466,11 +1469,10 @@
 						</object>
 					</array>
 					<string key="NSFrameSize">{339, 380}</string>
-					<reference key="NSSuperview"/>
 					<reference key="NSNextKeyView" ref="121623818"/>
 					<string key="NSReuseIdentifierKey">_NS:207</string>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1920, 1178}}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<int key="NSWindowAnimationBehavior">5</int>
 				<bool key="NSWindowIsRestorable">YES</bool>
@@ -1494,7 +1496,7 @@
 				<nil key="NSUserInterfaceItemIdentifier"/>
 				<string key="NSWindowContentMinSize">{480, 270}</string>
 				<object class="NSView" key="NSWindowView" id="623129947">
-					<reference key="NSNextResponder"/>
+					<nil key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<array class="NSMutableArray" key="NSSubviews">
 						<object class="NSScrollView" id="927741309">
@@ -1772,11 +1774,10 @@ wGw</bytes>
 						</object>
 					</array>
 					<string key="NSFrameSize">{480, 270}</string>
-					<reference key="NSSuperview"/>
 					<reference key="NSNextKeyView" ref="927741309"/>
 					<string key="NSReuseIdentifierKey">_NS:20</string>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1920, 1178}}</string>
 				<string key="NSMinSize">{480, 292}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
@@ -2138,6 +2139,14 @@ wGw</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
+						<string key="label">homebrewStatusTextField</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="247097873"/>
+					</object>
+					<int key="connectionID">964</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
 						<string key="label">dataSource</string>
 						<reference key="source" ref="968496084"/>
 						<reference key="destination" ref="779376672"/>
@@ -2414,19 +2423,19 @@ wGw</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">contentArray: self.homebrewModel.installedFormulas</string>
+						<string key="label">contentArray: self.installedFormulas</string>
 						<reference key="source" ref="185241347"/>
-						<reference key="destination" ref="976324537"/>
+						<reference key="destination" ref="581770410"/>
 						<object class="NSNibBindingConnector" key="connector">
 							<reference key="NSSource" ref="185241347"/>
-							<reference key="NSDestination" ref="976324537"/>
-							<string key="NSLabel">contentArray: self.homebrewModel.installedFormulas</string>
+							<reference key="NSDestination" ref="581770410"/>
+							<string key="NSLabel">contentArray: self.installedFormulas</string>
 							<string key="NSBinding">contentArray</string>
-							<string key="NSKeyPath">self.homebrewModel.installedFormulas</string>
+							<string key="NSKeyPath">self.installedFormulas</string>
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
 					</object>
-					<int key="connectionID">927</int>
+					<int key="connectionID">968</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -3273,6 +3282,11 @@ wGw</bytes>
 						<reference key="object" ref="949886267"/>
 						<reference key="parent" ref="612205444"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">965</int>
+						<reference key="object" ref="581770410"/>
+						<reference key="parent" ref="0"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -3416,12 +3430,13 @@ wGw</bytes>
 				<string key="960.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="961.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="962.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="965.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">963</int>
+			<int key="maxID">970</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>

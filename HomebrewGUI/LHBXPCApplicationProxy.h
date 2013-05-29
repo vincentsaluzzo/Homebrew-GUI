@@ -14,5 +14,5 @@
 @end
 @interface LHBXPCApplicationProxy : NSObject <LHBXPCApplication>
 @property (strong) NSTextView *homebrewOutputTextView;
-
+@property (weak) NSTextField * homebrewStatusTextField;
 @end

@@ -7,27 +7,34 @@
 //
 
 #import "LLCXPCHomebrewProxy.h"
-
+@interface LLCXPCHomebrewProxy ()
+-(void)callBrewWith:(NSArray *)arguments completion:(void (^)(NSString *))output;
+@end
 @implementation LLCXPCHomebrewProxy
 @synthesize applicationProxy;
 -(void)installedFormulaList:(void (^)(NSArray *))list {
-    NSMutableArray *formulaList = [[[self callBrewWith:@[@"list"]] componentsSeparatedByString:@"\n"] mutableCopy];
-    [formulaList removeLastObject];
-    list(formulaList);
+    [self callBrewWith:@[@"list"] completion:^(NSString *output) {
+        NSMutableArray *formulaList = [[output componentsSeparatedByString:@"\n"] mutableCopy];
+        [formulaList removeLastObject];
+        list(formulaList);
+    }];
 }
 -(void)install:(NSString *)formula completion:(void (^)(NSString *))output {
-    output([self callBrewWith:@[@"install",formula]]);
+    [self callBrewWith:@[@"install",formula] completion:output];
 }
 -(void)uninstall:(NSString *)formula completion:(void (^)(NSString *))output {
-    output([self callBrewWith:@[@"uninstall",formula]]);
+    [self callBrewWith:@[@"uninstall",formula] completion:output];
 }
 
 -(void)search:(NSString *)term completion:(void (^)(NSString *))output {
-    output([self callBrewWith:@[@"search",term]]);
+    [self callBrewWith:@[@"search",term] completion:output];
 }
 
--(NSString *)callBrewWith:(NSArray *)arguments {
-    
+-(void)callDoctor:(void (^)(NSString *))diagnosis {
+    [self callBrewWith:@[@"doctor"] completion:diagnosis];
+}
+
+-(void)callBrewWith:(NSArray *)arguments completion:(void (^)(NSString *))output {
     NSMutableDictionary *xpcEnvironment = [[[NSProcessInfo processInfo] environment] mutableCopy];
     NSTask *homebrewTask = [[NSTask alloc] init];
     [homebrewTask setLaunchPath:@"/usr/local/bin/brew"];
@@ -43,18 +50,23 @@
         [xpcEnvironment addEntriesFromDictionary:@{@"http_proxy":httpProxyURL,@"https_proxy":httpsProxyURL}];
     }
     
-    [xpcEnvironment setValue:[NSString stringWithFormat:@"%@:%@",xpcEnvironment[@"PATH"],@"/usr/local/bin"] forKey:@"PATH"];
+    [xpcEnvironment setValue:[NSString stringWithFormat:@"%@:%@",@"/usr/local/bin",xpcEnvironment[@"PATH"]] forKey:@"PATH"];
+    [xpcEnvironment setValue:nil forKey:@"DYLD_LIBRARY_PATH"];
+    [xpcEnvironment setValue:nil forKey:@"DYLD_FRAMEWORK_PATH"];
     [homebrewTask setEnvironment:xpcEnvironment];
     NSPipe *standardOutputPipe = [[NSPipe alloc] init];
     [homebrewTask setStandardOutput:standardOutputPipe];
+    [homebrewTask setStandardError:standardOutputPipe];
     [homebrewTask launch];
     //[homebrewTask waitUntilExit];
     NSString *homebrewOutput = @"";
+    [applicationProxy report:
+     [NSString stringWithFormat:@"\n Brew called with arguments: %20@ \n",arguments]];
     while ([homebrewTask isRunning]) {
         NSString *availableString = [[NSString alloc] initWithData:[[standardOutputPipe fileHandleForReading] availableData] encoding:NSUTF8StringEncoding];
         [applicationProxy report:availableString];
         homebrewOutput = [homebrewOutput stringByAppendingString:availableString];
     }
-    return homebrewOutput;
+    output(homebrewOutput);
 }
 @end
