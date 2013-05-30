@@ -15,6 +15,9 @@ describe(@"Model", ^{
     it(@"should be empty before fetching installed formulas", ^{
         [[[LHBModel sharedInstance] installedFormulas] shouldBeNil];
     });
+    it(@"should have its installedFormulas set eventually", ^{
+        [[[LHBModel sharedInstance] shouldEventually] receive:@selector(setInstalledFormulas:)];
+    });
 });
 
 SPEC_END
