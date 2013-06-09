@@ -10,18 +10,20 @@
 #import "LLCXPCHomebrewProxy.h"
 #import "LHBAppDelegate.h"
 
-@interface LHBInstallerViewController : NSViewController<NSTableViewDataSource, NSTableViewDelegate, NSWindowDelegate> {
-    IBOutlet NSTableView* availableFormulasTableView;
-    __weak NSButton *_installButton;
-    IBOutlet NSWindow* window;
-    
-}
+@interface LHBInstallerViewController : NSViewController<NSTableViewDataSource, NSTableViewDelegate, NSWindowDelegate>
+
 -(IBAction) showInstallWindow:(id)sender;
 -(IBAction) install:(id)sender;
+
+@property (weak) IBOutlet NSTableView* availableFormulasTableView;
+@property (weak) IBOutlet NSWindow* window;
+
 @property (weak) IBOutlet NSButton *installButton;
 @property (weak) IBOutlet NSSearchFieldCell *formulaSearchFieldCell;
 @property (weak) IBOutlet NSArrayController *formulaArrayController;
 @property (weak) IBOutlet NSTextField *statusTextField;
 
 @property (strong) NSMutableArray* availableFormulas;
+
+
 @end

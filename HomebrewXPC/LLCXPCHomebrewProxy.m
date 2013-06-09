@@ -34,6 +34,10 @@
     [self callBrewWith:@[@"doctor"] completion:diagnosis];
 }
 
+-(void)update:(void (^)(NSString *))output {
+    [self callBrewWith:@[@"update"] completion:output];
+}
+
 -(void)callBrewWith:(NSArray *)arguments completion:(void (^)(NSString *))output {
     NSMutableDictionary *xpcEnvironment = [[[NSProcessInfo processInfo] environment] mutableCopy];
     NSTask *homebrewTask = [[NSTask alloc] init];

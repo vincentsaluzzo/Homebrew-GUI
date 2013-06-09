@@ -1,735 +1,1831 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		141DB9DD16A72C620092EE32 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 141DB9DC16A72C620092EE32 /* icon.icns */; };
-		14297AA51756614000797DC3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1471F36E16A9687000203242 /* SenTestingKit.framework */; };
-		1462F53016A300BE00EE9734 /* LHBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462F52F16A300BE00EE9734 /* LHBModel.m */; };
-		1462F53416A30E7700EE9734 /* LHBXPCApplicationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1462F53316A30E7700EE9734 /* LHBXPCApplicationProxy.m */; };
-		1476428417565ED20027DDB1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE4FE58148E4CDD008EDE8B /* Cocoa.framework */; };
-		14764292175660EB0027DDB1 /* LHBModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1471F36316A967DE00203242 /* LHBModelTest.m */; };
-		14A1721616A728DD006AF4A1 /* Brewery Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 14A1721516A728DD006AF4A1 /* Brewery Icon.png */; };
-		14B6EA6F16A18FF80050EFC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B6EA6E16A18FF80050EFC2 /* Foundation.framework */; };
-		14B6EA7516A18FF80050EFC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14B6EA7316A18FF80050EFC2 /* InfoPlist.strings */; };
-		14B6EA7816A18FF80050EFC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B6EA7716A18FF80050EFC2 /* main.m */; };
-		14B6EA7D16A190410050EFC2 /* LLC.HomebrewXPC.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 14B6EA6D16A18FF80050EFC2 /* LLC.HomebrewXPC.xpc */; };
-		14B6EA8316A1B0C40050EFC2 /* LLCXPCListenerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B6EA8216A1B0C40050EFC2 /* LLCXPCListenerDelegate.m */; };
-		14B6EA8616A1B5A50050EFC2 /* LLCXPCHomebrewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B6EA8516A1B5A40050EFC2 /* LLCXPCHomebrewProxy.m */; };
-		14B6EA9B16A205D70050EFC2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B6EA9A16A205D70050EFC2 /* CFNetwork.framework */; };
-		1FE4FE59148E4CDD008EDE8B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE4FE58148E4CDD008EDE8B /* Cocoa.framework */; };
-		1FE4FE63148E4CDD008EDE8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4FE61148E4CDD008EDE8B /* InfoPlist.strings */; };
-		1FE4FE65148E4CDD008EDE8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4FE64148E4CDD008EDE8B /* main.m */; };
-		1FE4FE69148E4CDD008EDE8B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4FE67148E4CDD008EDE8B /* Credits.rtf */; };
-		1FE4FE6C148E4CDD008EDE8B /* LHBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4FE6B148E4CDD008EDE8B /* LHBAppDelegate.m */; };
-		1FE4FE6F148E4CDD008EDE8B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4FE6D148E4CDD008EDE8B /* MainMenu.xib */; };
-		1FE4FE7A148E5FEB008EDE8B /* LHBInstalledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4FE79148E5FEB008EDE8B /* LHBInstalledViewController.m */; };
-		1FE4FECA1490B067008EDE8B /* LHBInstallerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4FEC91490B066008EDE8B /* LHBInstallerViewController.m */; };
-		DDD3FB18A2E74E4482E91C56 /* libPods-BreweryTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E84072F6544D5AA02965D3 /* libPods-BreweryTest.a */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		14B6EA7E16A1905C0050EFC2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1FE4FE4B148E4CDD008EDE8B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 14B6EA6C16A18FF80050EFC2;
-			remoteInfo = HomebrewXPC;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		14B6EA7C16A190180050EFC2 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = Contents/XPCServices;
-			dstSubfolderSpec = 1;
-			files = (
-				14B6EA7D16A190410050EFC2 /* LLC.HomebrewXPC.xpc in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		141DB9DC16A72C620092EE32 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = ../icon.icns; sourceTree = "<group>"; };
-		1462F52E16A300BE00EE9734 /* LHBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHBModel.h; sourceTree = "<group>"; };
-		1462F52F16A300BE00EE9734 /* LHBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHBModel.m; sourceTree = "<group>"; };
-		1462F53216A30E7700EE9734 /* LHBXPCApplicationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHBXPCApplicationProxy.h; sourceTree = "<group>"; };
-		1462F53316A30E7700EE9734 /* LHBXPCApplicationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHBXPCApplicationProxy.m; sourceTree = "<group>"; };
-		1471F36116A9656800203242 /* Brewery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Brewery.entitlements; sourceTree = SOURCE_ROOT; };
-		1471F36316A967DE00203242 /* LHBModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LHBModelTest.m; path = ../LHBModelTest.m; sourceTree = "<group>"; };
-		1471F36E16A9687000203242 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		1471F37316A9687000203242 /* BreweryTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BreweryTest-Info.plist"; sourceTree = "<group>"; };
-		1471F37516A9687000203242 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1471F37A16A9687000203242 /* BreweryTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BreweryTest-Prefix.pch"; sourceTree = "<group>"; };
-		1476428217565ED20027DDB1 /* BreweryTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreweryTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		14A1721516A728DD006AF4A1 /* Brewery Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Brewery Icon.png"; path = "../Brewery Icon.png"; sourceTree = "<group>"; };
-		14B6EA6D16A18FF80050EFC2 /* LLC.HomebrewXPC.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLC.HomebrewXPC.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
-		14B6EA6E16A18FF80050EFC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		14B6EA7216A18FF80050EFC2 /* HomebrewXPC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomebrewXPC-Info.plist"; sourceTree = "<group>"; };
-		14B6EA7416A18FF80050EFC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		14B6EA7616A18FF80050EFC2 /* HomebrewXPC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HomebrewXPC-Prefix.pch"; sourceTree = "<group>"; };
-		14B6EA7716A18FF80050EFC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		14B6EA8116A1B0C40050EFC2 /* LLCXPCListenerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCXPCListenerDelegate.h; sourceTree = "<group>"; };
-		14B6EA8216A1B0C40050EFC2 /* LLCXPCListenerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCXPCListenerDelegate.m; sourceTree = "<group>"; };
-		14B6EA8416A1B5A40050EFC2 /* LLCXPCHomebrewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCXPCHomebrewProxy.h; sourceTree = "<group>"; };
-		14B6EA8516A1B5A40050EFC2 /* LLCXPCHomebrewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCXPCHomebrewProxy.m; sourceTree = "<group>"; };
-		14B6EA9A16A205D70050EFC2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		16E84072F6544D5AA02965D3 /* libPods-BreweryTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BreweryTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FE4FE54148E4CDD008EDE8B /* Brewery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brewery.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FE4FE58148E4CDD008EDE8B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		1FE4FE5B148E4CDD008EDE8B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		1FE4FE5C148E4CDD008EDE8B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		1FE4FE5D148E4CDD008EDE8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1FE4FE60148E4CDD008EDE8B /* Brewery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Brewery-Info.plist"; sourceTree = "<group>"; };
-		1FE4FE62148E4CDD008EDE8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1FE4FE64148E4CDD008EDE8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1FE4FE66148E4CDD008EDE8B /* Brewery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Brewery-Prefix.pch"; sourceTree = "<group>"; };
-		1FE4FE68148E4CDD008EDE8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		1FE4FE6A148E4CDD008EDE8B /* LHBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHBAppDelegate.h; sourceTree = "<group>"; };
-		1FE4FE6B148E4CDD008EDE8B /* LHBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHBAppDelegate.m; sourceTree = "<group>"; };
-		1FE4FE6E148E4CDD008EDE8B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		1FE4FE78148E5FEB008EDE8B /* LHBInstalledViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHBInstalledViewController.h; sourceTree = "<group>"; };
-		1FE4FE79148E5FEB008EDE8B /* LHBInstalledViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHBInstalledViewController.m; sourceTree = "<group>"; };
-		1FE4FEC81490B066008EDE8B /* LHBInstallerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHBInstallerViewController.h; sourceTree = "<group>"; };
-		1FE4FEC91490B066008EDE8B /* LHBInstallerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHBInstallerViewController.m; sourceTree = "<group>"; };
-		B0DACD7C6A134C5A8FE3529A /* libPods-BreweryTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BreweryTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5280F0AA0174ADD84D05A64 /* Pods-BreweryTest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreweryTest.xcconfig"; path = "Pods/Pods-BreweryTest.xcconfig"; sourceTree = SOURCE_ROOT; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		1476427E17565ED20027DDB1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14297AA51756614000797DC3 /* SenTestingKit.framework in Frameworks */,
-				1476428417565ED20027DDB1 /* Cocoa.framework in Frameworks */,
-				DDD3FB18A2E74E4482E91C56 /* libPods-BreweryTest.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14B6EA6A16A18FF80050EFC2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14B6EA9B16A205D70050EFC2 /* CFNetwork.framework in Frameworks */,
-				14B6EA6F16A18FF80050EFC2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FE4FE51148E4CDD008EDE8B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1FE4FE59148E4CDD008EDE8B /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		1471F37116A9687000203242 /* BreweryTest */ = {
-			isa = PBXGroup;
-			children = (
-				1471F36316A967DE00203242 /* LHBModelTest.m */,
-				1471F37216A9687000203242 /* Supporting Files */,
-			);
-			path = BreweryTest;
-			sourceTree = "<group>";
-		};
-		1471F37216A9687000203242 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1471F37316A9687000203242 /* BreweryTest-Info.plist */,
-				1471F37416A9687000203242 /* InfoPlist.strings */,
-				1471F37A16A9687000203242 /* BreweryTest-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		14B6EA7016A18FF80050EFC2 /* HomebrewXPC */ = {
-			isa = PBXGroup;
-			children = (
-				14B6EA7716A18FF80050EFC2 /* main.m */,
-				14B6EA8116A1B0C40050EFC2 /* LLCXPCListenerDelegate.h */,
-				14B6EA8216A1B0C40050EFC2 /* LLCXPCListenerDelegate.m */,
-				14B6EA8416A1B5A40050EFC2 /* LLCXPCHomebrewProxy.h */,
-				14B6EA8516A1B5A40050EFC2 /* LLCXPCHomebrewProxy.m */,
-				14B6EA7116A18FF80050EFC2 /* Supporting Files */,
-			);
-			path = HomebrewXPC;
-			sourceTree = "<group>";
-		};
-		14B6EA7116A18FF80050EFC2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				141DB9DC16A72C620092EE32 /* icon.icns */,
-				14A1721516A728DD006AF4A1 /* Brewery Icon.png */,
-				14B6EA7216A18FF80050EFC2 /* HomebrewXPC-Info.plist */,
-				14B6EA7316A18FF80050EFC2 /* InfoPlist.strings */,
-				14B6EA7616A18FF80050EFC2 /* HomebrewXPC-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		1FE4FE49148E4CDD008EDE8B = {
-			isa = PBXGroup;
-			children = (
-				1FE4FE5E148E4CDD008EDE8B /* Brewery */,
-				14B6EA7016A18FF80050EFC2 /* HomebrewXPC */,
-				1471F37116A9687000203242 /* BreweryTest */,
-				1FE4FE57148E4CDD008EDE8B /* Frameworks */,
-				1FE4FE55148E4CDD008EDE8B /* Products */,
-				E5280F0AA0174ADD84D05A64 /* Pods-BreweryTest.xcconfig */,
-			);
-			sourceTree = "<group>";
-		};
-		1FE4FE55148E4CDD008EDE8B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1FE4FE54148E4CDD008EDE8B /* Brewery.app */,
-				14B6EA6D16A18FF80050EFC2 /* LLC.HomebrewXPC.xpc */,
-				1476428217565ED20027DDB1 /* BreweryTest.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1FE4FE57148E4CDD008EDE8B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				14B6EA9A16A205D70050EFC2 /* CFNetwork.framework */,
-				1FE4FE58148E4CDD008EDE8B /* Cocoa.framework */,
-				14B6EA6E16A18FF80050EFC2 /* Foundation.framework */,
-				1471F36E16A9687000203242 /* SenTestingKit.framework */,
-				1FE4FE5A148E4CDD008EDE8B /* Other Frameworks */,
-				B0DACD7C6A134C5A8FE3529A /* libPods-BreweryTest.a */,
-				16E84072F6544D5AA02965D3 /* libPods-BreweryTest.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1FE4FE5A148E4CDD008EDE8B /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1FE4FE5B148E4CDD008EDE8B /* AppKit.framework */,
-				1FE4FE5C148E4CDD008EDE8B /* CoreData.framework */,
-				1FE4FE5D148E4CDD008EDE8B /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		1FE4FE5E148E4CDD008EDE8B /* Brewery */ = {
-			isa = PBXGroup;
-			children = (
-				1471F36116A9656800203242 /* Brewery.entitlements */,
-				1FE4FE6A148E4CDD008EDE8B /* LHBAppDelegate.h */,
-				1FE4FE6B148E4CDD008EDE8B /* LHBAppDelegate.m */,
-				1462F53216A30E7700EE9734 /* LHBXPCApplicationProxy.h */,
-				1462F53316A30E7700EE9734 /* LHBXPCApplicationProxy.m */,
-				1FE4FE6D148E4CDD008EDE8B /* MainMenu.xib */,
-				1FE4FE5F148E4CDD008EDE8B /* Supporting Files */,
-				1462F52E16A300BE00EE9734 /* LHBModel.h */,
-				1462F52F16A300BE00EE9734 /* LHBModel.m */,
-				1FE4FE78148E5FEB008EDE8B /* LHBInstalledViewController.h */,
-				1FE4FE79148E5FEB008EDE8B /* LHBInstalledViewController.m */,
-				1FE4FEC81490B066008EDE8B /* LHBInstallerViewController.h */,
-				1FE4FEC91490B066008EDE8B /* LHBInstallerViewController.m */,
-			);
-			name = Brewery;
-			path = HomebrewGUI;
-			sourceTree = "<group>";
-		};
-		1FE4FE5F148E4CDD008EDE8B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1FE4FE60148E4CDD008EDE8B /* Brewery-Info.plist */,
-				1FE4FE61148E4CDD008EDE8B /* InfoPlist.strings */,
-				1FE4FE64148E4CDD008EDE8B /* main.m */,
-				1FE4FE66148E4CDD008EDE8B /* Brewery-Prefix.pch */,
-				1FE4FE67148E4CDD008EDE8B /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		1476428117565ED20027DDB1 /* BreweryTest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1476428F17565ED20027DDB1 /* Build configuration list for PBXNativeTarget "BreweryTest" */;
-			buildPhases = (
-				AD611171C4D246879E09852C /* Check Pods Manifest.lock */,
-				1476427D17565ED20027DDB1 /* Sources */,
-				1476427E17565ED20027DDB1 /* Frameworks */,
-				1476427F17565ED20027DDB1 /* Resources */,
-				1476428017565ED20027DDB1 /* ShellScript */,
-				2E5B573A9AA54166B4226532 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BreweryTest;
-			productName = BreweryTest;
-			productReference = 1476428217565ED20027DDB1 /* BreweryTest.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
-		14B6EA6C16A18FF80050EFC2 /* HomebrewXPC */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 14B6EA7916A18FF80050EFC2 /* Build configuration list for PBXNativeTarget "HomebrewXPC" */;
-			buildPhases = (
-				14B6EA6916A18FF80050EFC2 /* Sources */,
-				14B6EA6A16A18FF80050EFC2 /* Frameworks */,
-				14B6EA6B16A18FF80050EFC2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = HomebrewXPC;
-			productName = HomebrewXPC;
-			productReference = 14B6EA6D16A18FF80050EFC2 /* LLC.HomebrewXPC.xpc */;
-			productType = "com.apple.product-type.bundle";
-		};
-		1FE4FE53148E4CDD008EDE8B /* Brewery */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1FE4FE72148E4CDD008EDE8B /* Build configuration list for PBXNativeTarget "Brewery" */;
-			buildPhases = (
-				1FE4FE50148E4CDD008EDE8B /* Sources */,
-				1FE4FE51148E4CDD008EDE8B /* Frameworks */,
-				1FE4FE52148E4CDD008EDE8B /* Resources */,
-				14B6EA7C16A190180050EFC2 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				14B6EA7F16A1905C0050EFC2 /* PBXTargetDependency */,
-			);
-			name = Brewery;
-			productName = HomebrewGUI;
-			productReference = 1FE4FE54148E4CDD008EDE8B /* Brewery.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		1FE4FE4B148E4CDD008EDE8B /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = LHB;
-				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "Labastille Laser Corp";
-			};
-			buildConfigurationList = 1FE4FE4E148E4CDD008EDE8B /* Build configuration list for PBXProject "Brewery" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 1FE4FE49148E4CDD008EDE8B;
-			productRefGroup = 1FE4FE55148E4CDD008EDE8B /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				1FE4FE53148E4CDD008EDE8B /* Brewery */,
-				14B6EA6C16A18FF80050EFC2 /* HomebrewXPC */,
-				1476428117565ED20027DDB1 /* BreweryTest */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		1476427F17565ED20027DDB1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14B6EA6B16A18FF80050EFC2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14B6EA7516A18FF80050EFC2 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FE4FE52148E4CDD008EDE8B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1FE4FE63148E4CDD008EDE8B /* InfoPlist.strings in Resources */,
-				1FE4FE69148E4CDD008EDE8B /* Credits.rtf in Resources */,
-				1FE4FE6F148E4CDD008EDE8B /* MainMenu.xib in Resources */,
-				14A1721616A728DD006AF4A1 /* Brewery Icon.png in Resources */,
-				141DB9DD16A72C620092EE32 /* icon.icns in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1476428017565ED20027DDB1 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		2E5B573A9AA54166B4226532 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-BreweryTest-resources.sh\"\n";
-		};
-		AD611171C4D246879E09852C /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		1476427D17565ED20027DDB1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14764292175660EB0027DDB1 /* LHBModelTest.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14B6EA6916A18FF80050EFC2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14B6EA7816A18FF80050EFC2 /* main.m in Sources */,
-				14B6EA8316A1B0C40050EFC2 /* LLCXPCListenerDelegate.m in Sources */,
-				14B6EA8616A1B5A50050EFC2 /* LLCXPCHomebrewProxy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FE4FE50148E4CDD008EDE8B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1FE4FE65148E4CDD008EDE8B /* main.m in Sources */,
-				1FE4FE6C148E4CDD008EDE8B /* LHBAppDelegate.m in Sources */,
-				1FE4FE7A148E5FEB008EDE8B /* LHBInstalledViewController.m in Sources */,
-				1FE4FECA1490B067008EDE8B /* LHBInstallerViewController.m in Sources */,
-				1462F53016A300BE00EE9734 /* LHBModel.m in Sources */,
-				1462F53416A30E7700EE9734 /* LHBXPCApplicationProxy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		14B6EA7F16A1905C0050EFC2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 14B6EA6C16A18FF80050EFC2 /* HomebrewXPC */;
-			targetProxy = 14B6EA7E16A1905C0050EFC2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1471F37416A9687000203242 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1471F37516A9687000203242 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		14B6EA7316A18FF80050EFC2 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14B6EA7416A18FF80050EFC2 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		1FE4FE61148E4CDD008EDE8B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1FE4FE62148E4CDD008EDE8B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		1FE4FE67148E4CDD008EDE8B /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1FE4FE68148E4CDD008EDE8B /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		1FE4FE6D148E4CDD008EDE8B /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1FE4FE6E148E4CDD008EDE8B /* en */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		1476429017565ED20027DDB1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5280F0AA0174ADD84D05A64 /* Pods-BreweryTest.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Brewery.app/Contents/MacOS/Brewery";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BreweryTest/BreweryTest-Prefix.pch";
-				INFOPLIST_FILE = "BreweryTest/BreweryTest-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				USER_HEADER_SEARCH_PATHS = "";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		1476429117565ED20027DDB1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Brewery.app/Contents/MacOS/Brewery";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BreweryTest/BreweryTest-Prefix.pch";
-				INFOPLIST_FILE = "BreweryTest/BreweryTest-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				USER_HEADER_SEARCH_PATHS = "";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
-		14B6EA7A16A18FF80050EFC2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HomebrewXPC/HomebrewXPC-Prefix.pch";
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				INFOPLIST_FILE = "HomebrewXPC/HomebrewXPC-Info.plist";
-				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = "LLC.$(TARGET_NAME:rfc1034identifier)";
-				WRAPPER_EXTENSION = xpc;
-			};
-			name = Debug;
-		};
-		14B6EA7B16A18FF80050EFC2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HomebrewXPC/HomebrewXPC-Prefix.pch";
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				INFOPLIST_FILE = "HomebrewXPC/HomebrewXPC-Info.plist";
-				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = "LLC.$(TARGET_NAME:rfc1034identifier)";
-				WRAPPER_EXTENSION = xpc;
-			};
-			name = Release;
-		};
-		1FE4FE70148E4CDD008EDE8B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		1FE4FE71148E4CDD008EDE8B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		1FE4FE73148E4CDD008EDE8B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_ENTITLEMENTS = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HomebrewGUI/Brewery-Prefix.pch";
-				INFOPLIST_FILE = "HomebrewGUI/Brewery-Info.plist";
-				PRODUCT_NAME = Brewery;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		1FE4FE74148E4CDD008EDE8B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_ENTITLEMENTS = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HomebrewGUI/Brewery-Prefix.pch";
-				INFOPLIST_FILE = "HomebrewGUI/Brewery-Info.plist";
-				PRODUCT_NAME = Brewery;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		1476428F17565ED20027DDB1 /* Build configuration list for PBXNativeTarget "BreweryTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1476429017565ED20027DDB1 /* Debug */,
-				1476429117565ED20027DDB1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		14B6EA7916A18FF80050EFC2 /* Build configuration list for PBXNativeTarget "HomebrewXPC" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				14B6EA7A16A18FF80050EFC2 /* Debug */,
-				14B6EA7B16A18FF80050EFC2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1FE4FE4E148E4CDD008EDE8B /* Build configuration list for PBXProject "Brewery" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1FE4FE70148E4CDD008EDE8B /* Debug */,
-				1FE4FE71148E4CDD008EDE8B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1FE4FE72148E4CDD008EDE8B /* Build configuration list for PBXNativeTarget "Brewery" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1FE4FE73148E4CDD008EDE8B /* Debug */,
-				1FE4FE74148E4CDD008EDE8B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 1FE4FE4B148E4CDD008EDE8B /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0F42630D14BC423CAF90DBF4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>141DB9DC16A72C620092EE32</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.icns</string>
+			<key>name</key>
+			<string>icon.icns</string>
+			<key>path</key>
+			<string>../icon.icns</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>141DB9DD16A72C620092EE32</key>
+		<dict>
+			<key>fileRef</key>
+			<string>141DB9DC16A72C620092EE32</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>14297AA51756614000797DC3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1471F36E16A9687000203242</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1462F52E16A300BE00EE9734</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>LHBModel.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1462F52F16A300BE00EE9734</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>LHBModel.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1462F53016A300BE00EE9734</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1462F52F16A300BE00EE9734</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1462F53216A30E7700EE9734</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>LHBXPCApplicationProxy.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1462F53316A30E7700EE9734</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>LHBXPCApplicationProxy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1462F53416A30E7700EE9734</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1462F53316A30E7700EE9734</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1471F36116A9656800203242</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xml</string>
+			<key>path</key>
+			<string>Brewery.entitlements</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>1471F36316A967DE00203242</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>LHBModelTest.m</string>
+			<key>path</key>
+			<string>../LHBModelTest.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1471F36E16A9687000203242</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SenTestingKit.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/SenTestingKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>1471F37116A9687000203242</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1471F36316A967DE00203242</string>
+				<string>1471F37216A9687000203242</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>BreweryTest</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1471F37216A9687000203242</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1471F37316A9687000203242</string>
+				<string>1471F37416A9687000203242</string>
+				<string>1471F37A16A9687000203242</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1471F37316A9687000203242</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>BreweryTest-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1471F37416A9687000203242</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1471F37516A9687000203242</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1471F37516A9687000203242</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1471F37A16A9687000203242</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BreweryTest-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1476427D17565ED20027DDB1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>14764292175660EB0027DDB1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1476427E17565ED20027DDB1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>14297AA51756614000797DC3</string>
+				<string>1476428417565ED20027DDB1</string>
+				<string>DDD3FB18A2E74E4482E91C56</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1476427F17565ED20027DDB1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1476428017565ED20027DDB1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string># Run the unit tests in this test bundle.
+"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests"
+</string>
+		</dict>
+		<key>1476428117565ED20027DDB1</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>1476428F17565ED20027DDB1</string>
+			<key>buildPhases</key>
+			<array>
+				<string>AD611171C4D246879E09852C</string>
+				<string>1476427D17565ED20027DDB1</string>
+				<string>1476427E17565ED20027DDB1</string>
+				<string>1476427F17565ED20027DDB1</string>
+				<string>1476428017565ED20027DDB1</string>
+				<string>2E5B573A9AA54166B4226532</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>BreweryTest</string>
+			<key>productName</key>
+			<string>BreweryTest</string>
+			<key>productReference</key>
+			<string>1476428217565ED20027DDB1</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
+		</dict>
+		<key>1476428217565ED20027DDB1</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>BreweryTest.octest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>1476428417565ED20027DDB1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1FE4FE58148E4CDD008EDE8B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1476428F17565ED20027DDB1</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>1476429017565ED20027DDB1</string>
+				<string>1476429117565ED20027DDB1</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>1476429017565ED20027DDB1</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E5280F0AA0174ADD84D05A64</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Brewery.app/Contents/MacOS/Brewery</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string></string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>BreweryTest/BreweryTest-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>BreweryTest/BreweryTest-Info.plist</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.8</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>USER_HEADER_SEARCH_PATHS</key>
+				<string></string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>octest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>1476429117565ED20027DDB1</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Brewery.app/Contents/MacOS/Brewery</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string></string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>BreweryTest/BreweryTest-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>BreweryTest/BreweryTest-Info.plist</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.8</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>USER_HEADER_SEARCH_PATHS</key>
+				<string></string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>octest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>14764292175660EB0027DDB1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1471F36316A967DE00203242</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>14A1721516A728DD006AF4A1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Brewery Icon.png</string>
+			<key>path</key>
+			<string>../Brewery Icon.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14A1721616A728DD006AF4A1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>14A1721516A728DD006AF4A1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>14B6EA6916A18FF80050EFC2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>14B6EA7816A18FF80050EFC2</string>
+				<string>14B6EA8316A1B0C40050EFC2</string>
+				<string>14B6EA8616A1B5A50050EFC2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>14B6EA6A16A18FF80050EFC2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>14B6EA9B16A205D70050EFC2</string>
+				<string>14B6EA6F16A18FF80050EFC2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>14B6EA6B16A18FF80050EFC2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>14B6EA7516A18FF80050EFC2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>14B6EA6C16A18FF80050EFC2</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>14B6EA7916A18FF80050EFC2</string>
+			<key>buildPhases</key>
+			<array>
+				<string>14B6EA6916A18FF80050EFC2</string>
+				<string>14B6EA6A16A18FF80050EFC2</string>
+				<string>14B6EA6B16A18FF80050EFC2</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>HomebrewXPC</string>
+			<key>productName</key>
+			<string>HomebrewXPC</string>
+			<key>productReference</key>
+			<string>14B6EA6D16A18FF80050EFC2</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
+		</dict>
+		<key>14B6EA6D16A18FF80050EFC2</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>LLC.HomebrewXPC.xpc</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>14B6EA6E16A18FF80050EFC2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>14B6EA6F16A18FF80050EFC2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>14B6EA6E16A18FF80050EFC2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>14B6EA7016A18FF80050EFC2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>14B6EA7716A18FF80050EFC2</string>
+				<string>14B6EA8116A1B0C40050EFC2</string>
+				<string>14B6EA8216A1B0C40050EFC2</string>
+				<string>14B6EA8416A1B5A40050EFC2</string>
+				<string>14B6EA8516A1B5A40050EFC2</string>
+				<string>14B6EA7116A18FF80050EFC2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>HomebrewXPC</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14B6EA7116A18FF80050EFC2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>141DB9DC16A72C620092EE32</string>
+				<string>14A1721516A728DD006AF4A1</string>
+				<string>14B6EA7216A18FF80050EFC2</string>
+				<string>14B6EA7316A18FF80050EFC2</string>
+				<string>14B6EA7616A18FF80050EFC2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14B6EA7216A18FF80050EFC2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>HomebrewXPC-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14B6EA7316A18FF80050EFC2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>14B6EA7416A18FF80050EFC2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14B6EA7416A18FF80050EFC2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14B6EA7516A18FF80050EFC2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>14B6EA7316A18FF80050EFC2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>14B6EA7616A18FF80050EFC2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>HomebrewXPC-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14B6EA7716A18FF80050EFC2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14B6EA7816A18FF80050EFC2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>14B6EA7716A18FF80050EFC2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>14B6EA7916A18FF80050EFC2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>14B6EA7A16A18FF80050EFC2</string>
+				<string>14B6EA7B16A18FF80050EFC2</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>14B6EA7A16A18FF80050EFC2</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string></string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>HomebrewXPC/HomebrewXPC-Prefix.pch</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>HomebrewXPC/HomebrewXPC-Info.plist</string>
+				<key>MACH_O_TYPE</key>
+				<string>mh_execute</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.8</string>
+				<key>PRODUCT_NAME</key>
+				<string>LLC.$(TARGET_NAME:rfc1034identifier)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xpc</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>14B6EA7B16A18FF80050EFC2</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string></string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>HomebrewXPC/HomebrewXPC-Prefix.pch</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>HomebrewXPC/HomebrewXPC-Info.plist</string>
+				<key>MACH_O_TYPE</key>
+				<string>mh_execute</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.8</string>
+				<key>PRODUCT_NAME</key>
+				<string>LLC.$(TARGET_NAME:rfc1034identifier)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xpc</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>14B6EA7C16A190180050EFC2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>dstPath</key>
+			<string>Contents/XPCServices</string>
+			<key>dstSubfolderSpec</key>
+			<string>1</string>
+			<key>files</key>
+			<array>
+				<string>14B6EA7D16A190410050EFC2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXCopyFilesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>14B6EA7D16A190410050EFC2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>14B6EA6D16A18FF80050EFC2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>14B6EA7E16A1905C0050EFC2</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>1FE4FE4B148E4CDD008EDE8B</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>14B6EA6C16A18FF80050EFC2</string>
+			<key>remoteInfo</key>
+			<string>HomebrewXPC</string>
+		</dict>
+		<key>14B6EA7F16A1905C0050EFC2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>14B6EA6C16A18FF80050EFC2</string>
+			<key>targetProxy</key>
+			<string>14B6EA7E16A1905C0050EFC2</string>
+		</dict>
+		<key>14B6EA8116A1B0C40050EFC2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>LLCXPCListenerDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14B6EA8216A1B0C40050EFC2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>LLCXPCListenerDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14B6EA8316A1B0C40050EFC2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>14B6EA8216A1B0C40050EFC2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>14B6EA8416A1B5A40050EFC2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>LLCXPCHomebrewProxy.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14B6EA8516A1B5A40050EFC2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>LLCXPCHomebrewProxy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14B6EA8616A1B5A50050EFC2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>14B6EA8516A1B5A40050EFC2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>14B6EA9A16A205D70050EFC2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CFNetwork.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CFNetwork.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>14B6EA9B16A205D70050EFC2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>14B6EA9A16A205D70050EFC2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>16E84072F6544D5AA02965D3</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-BreweryTest.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>1FE4FE49148E4CDD008EDE8B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1FE4FE5E148E4CDD008EDE8B</string>
+				<string>14B6EA7016A18FF80050EFC2</string>
+				<string>1471F37116A9687000203242</string>
+				<string>1FE4FE57148E4CDD008EDE8B</string>
+				<string>1FE4FE55148E4CDD008EDE8B</string>
+				<string>E5280F0AA0174ADD84D05A64</string>
+				<string>0F42630D14BC423CAF90DBF4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE4B148E4CDD008EDE8B</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>LHB</string>
+				<key>LastUpgradeCheck</key>
+				<string>0460</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Labastille Laser Corp</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>1FE4FE4E148E4CDD008EDE8B</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>1FE4FE49148E4CDD008EDE8B</string>
+			<key>productRefGroup</key>
+			<string>1FE4FE55148E4CDD008EDE8B</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>1FE4FE53148E4CDD008EDE8B</string>
+				<string>14B6EA6C16A18FF80050EFC2</string>
+				<string>1476428117565ED20027DDB1</string>
+			</array>
+		</dict>
+		<key>1FE4FE4E148E4CDD008EDE8B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>1FE4FE70148E4CDD008EDE8B</string>
+				<string>1FE4FE71148E4CDD008EDE8B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>1FE4FE50148E4CDD008EDE8B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1FE4FE65148E4CDD008EDE8B</string>
+				<string>1FE4FE6C148E4CDD008EDE8B</string>
+				<string>1FE4FE7A148E5FEB008EDE8B</string>
+				<string>1FE4FECA1490B067008EDE8B</string>
+				<string>1462F53016A300BE00EE9734</string>
+				<string>1462F53416A30E7700EE9734</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1FE4FE51148E4CDD008EDE8B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1FE4FE59148E4CDD008EDE8B</string>
+				<string>5B9B2D379A1E400B85131F25</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1FE4FE52148E4CDD008EDE8B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1FE4FE63148E4CDD008EDE8B</string>
+				<string>1FE4FE69148E4CDD008EDE8B</string>
+				<string>1FE4FE6F148E4CDD008EDE8B</string>
+				<string>14A1721616A728DD006AF4A1</string>
+				<string>141DB9DD16A72C620092EE32</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1FE4FE53148E4CDD008EDE8B</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>1FE4FE72148E4CDD008EDE8B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>501341653A1D49D192D3773D</string>
+				<string>1FE4FE50148E4CDD008EDE8B</string>
+				<string>1FE4FE51148E4CDD008EDE8B</string>
+				<string>1FE4FE52148E4CDD008EDE8B</string>
+				<string>14B6EA7C16A190180050EFC2</string>
+				<string>42182286D65047248860D5CC</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>14B6EA7F16A1905C0050EFC2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Brewery</string>
+			<key>productName</key>
+			<string>HomebrewGUI</string>
+			<key>productReference</key>
+			<string>1FE4FE54148E4CDD008EDE8B</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>1FE4FE54148E4CDD008EDE8B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Brewery.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>1FE4FE55148E4CDD008EDE8B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1FE4FE54148E4CDD008EDE8B</string>
+				<string>14B6EA6D16A18FF80050EFC2</string>
+				<string>1476428217565ED20027DDB1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE57148E4CDD008EDE8B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>14B6EA9A16A205D70050EFC2</string>
+				<string>1FE4FE58148E4CDD008EDE8B</string>
+				<string>14B6EA6E16A18FF80050EFC2</string>
+				<string>1471F36E16A9687000203242</string>
+				<string>1FE4FE5A148E4CDD008EDE8B</string>
+				<string>B0DACD7C6A134C5A8FE3529A</string>
+				<string>16E84072F6544D5AA02965D3</string>
+				<string>8580DCFE96BC482C8AF34FEA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE58148E4CDD008EDE8B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Cocoa.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Cocoa.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>1FE4FE59148E4CDD008EDE8B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1FE4FE58148E4CDD008EDE8B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1FE4FE5A148E4CDD008EDE8B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1FE4FE5B148E4CDD008EDE8B</string>
+				<string>1FE4FE5C148E4CDD008EDE8B</string>
+				<string>1FE4FE5D148E4CDD008EDE8B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Other Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE5B148E4CDD008EDE8B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AppKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/AppKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>1FE4FE5C148E4CDD008EDE8B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreData.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreData.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>1FE4FE5D148E4CDD008EDE8B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>1FE4FE5E148E4CDD008EDE8B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1471F36116A9656800203242</string>
+				<string>1FE4FE6A148E4CDD008EDE8B</string>
+				<string>1FE4FE6B148E4CDD008EDE8B</string>
+				<string>1462F53216A30E7700EE9734</string>
+				<string>1462F53316A30E7700EE9734</string>
+				<string>1FE4FE6D148E4CDD008EDE8B</string>
+				<string>1FE4FE5F148E4CDD008EDE8B</string>
+				<string>1462F52E16A300BE00EE9734</string>
+				<string>1462F52F16A300BE00EE9734</string>
+				<string>1FE4FE78148E5FEB008EDE8B</string>
+				<string>1FE4FE79148E5FEB008EDE8B</string>
+				<string>1FE4FEC81490B066008EDE8B</string>
+				<string>1FE4FEC91490B066008EDE8B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Brewery</string>
+			<key>path</key>
+			<string>HomebrewGUI</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE5F148E4CDD008EDE8B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1FE4FE60148E4CDD008EDE8B</string>
+				<string>1FE4FE61148E4CDD008EDE8B</string>
+				<string>1FE4FE64148E4CDD008EDE8B</string>
+				<string>1FE4FE66148E4CDD008EDE8B</string>
+				<string>1FE4FE67148E4CDD008EDE8B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE60148E4CDD008EDE8B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Brewery-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE61148E4CDD008EDE8B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1FE4FE62148E4CDD008EDE8B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE62148E4CDD008EDE8B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE63148E4CDD008EDE8B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1FE4FE61148E4CDD008EDE8B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1FE4FE64148E4CDD008EDE8B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE65148E4CDD008EDE8B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1FE4FE64148E4CDD008EDE8B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1FE4FE66148E4CDD008EDE8B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Brewery-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE67148E4CDD008EDE8B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1FE4FE68148E4CDD008EDE8B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Credits.rtf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE68148E4CDD008EDE8B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.rtf</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/Credits.rtf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE69148E4CDD008EDE8B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1FE4FE67148E4CDD008EDE8B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1FE4FE6A148E4CDD008EDE8B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>LHBAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE6B148E4CDD008EDE8B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>LHBAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE6C148E4CDD008EDE8B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1FE4FE6B148E4CDD008EDE8B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1FE4FE6D148E4CDD008EDE8B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1FE4FE6E148E4CDD008EDE8B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>MainMenu.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE6E148E4CDD008EDE8B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/MainMenu.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE6F148E4CDD008EDE8B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1FE4FE6D148E4CDD008EDE8B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1FE4FE70148E4CDD008EDE8B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_64_BIT)</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string></string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_MISSING_PROTOTYPES</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.7</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>1FE4FE71148E4CDD008EDE8B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_64_BIT)</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string></string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
+				<string>YES</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_MISSING_PROTOTYPES</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.7</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>1FE4FE72148E4CDD008EDE8B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>1FE4FE73148E4CDD008EDE8B</string>
+				<string>1FE4FE74148E4CDD008EDE8B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>1FE4FE73148E4CDD008EDE8B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>0F42630D14BC423CAF90DBF4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CODE_SIGN_ENTITLEMENTS</key>
+				<string></string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>HomebrewGUI/Brewery-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>HomebrewGUI/Brewery-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>Brewery</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>1FE4FE74148E4CDD008EDE8B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>0F42630D14BC423CAF90DBF4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CODE_SIGN_ENTITLEMENTS</key>
+				<string></string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>HomebrewGUI/Brewery-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>HomebrewGUI/Brewery-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>Brewery</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>1FE4FE78148E5FEB008EDE8B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>LHBInstalledViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE79148E5FEB008EDE8B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>LHBInstalledViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FE7A148E5FEB008EDE8B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1FE4FE79148E5FEB008EDE8B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1FE4FEC81490B066008EDE8B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>LHBInstallerViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FEC91490B066008EDE8B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>LHBInstallerViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE4FECA1490B067008EDE8B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1FE4FEC91490B066008EDE8B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2E5B573A9AA54166B4226532</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-BreweryTest-resources.sh"
+</string>
+		</dict>
+		<key>42182286D65047248860D5CC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>1</string>
+		</dict>
+		<key>501341653A1D49D192D3773D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>1</string>
+		</dict>
+		<key>5B9B2D379A1E400B85131F25</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8580DCFE96BC482C8AF34FEA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>8580DCFE96BC482C8AF34FEA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods.a</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>AD611171C4D246879E09852C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+		</dict>
+		<key>B0DACD7C6A134C5A8FE3529A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-BreweryTest.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>DDD3FB18A2E74E4482E91C56</key>
+		<dict>
+			<key>fileRef</key>
+			<string>16E84072F6544D5AA02965D3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5280F0AA0174ADD84D05A64</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-BreweryTest.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-BreweryTest.xcconfig</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>1FE4FE4B148E4CDD008EDE8B</string>
+</dict>
+</plist>

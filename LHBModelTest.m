@@ -7,16 +7,20 @@
 //
 
 #import "LHBModel.h"
+#import "LHBInstalledViewController.h"
 #import "Kiwi.h"
 
 SPEC_BEGIN(LHBModelSpec)
 
 describe(@"Model", ^{
-    it(@"should be empty before fetching installed formulas", ^{
+    it(@"should be nil before fetching installed formulas", ^{
         [[[LHBModel sharedInstance] installedFormulas] shouldBeNil];
     });
-    it(@"should have its installedFormulas set eventually", ^{
-        [[[LHBModel sharedInstance] shouldEventually] receive:@selector(setInstalledFormulas:)];
+    it(@"should not be nil after fetching installed formulas", ^{
+        id installedViewControllerMock = [LHBInstalledViewController new];
+        [installedViewControllerMock refreshInstalledFormulas:nil];
+        [[[expectFutureValue([[LHBModel sharedInstance] installedFormulas]) shouldEventuallyBeforeTimingOutAfter(5.0)] haveAtLeast:1] items];
+        //NSLog(@"Installed formulas: %@", [[LHBModel sharedInstance] installedFormulas]);
     });
 });
 

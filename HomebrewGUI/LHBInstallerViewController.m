@@ -13,7 +13,15 @@
 @end
 
 @implementation LHBInstallerViewController
-@synthesize installButton, availableFormulas, formulaArrayController;
+@synthesize availableFormulas, formulaArrayController;
+
+-(void)awakeFromNib {
+    RAC(installButton.isEnabled) =
+    [RACSignal combineLatest:@[RACAble(availableFormulasTableView.selectedRow)]
+                      reduce:^(NSInteger selectedRow) {
+                          return @(selectedRow != -1);
+                      }];
+}
 
 -(IBAction) showInstallWindow:(id)sender {
     [self.view.window makeKeyAndOrderFront:sender];
@@ -22,7 +30,7 @@
 }
 
 -(IBAction) install:(id)sender {
-    NSString *formulaToInstall = [[formulaArrayController arrangedObjects] objectAtIndex:[availableFormulasTableView selectedRow]];
+    NSString *formulaToInstall = [[formulaArrayController arrangedObjects] objectAtIndex:[_availableFormulasTableView selectedRow]];
     if ([formulaToInstall compare:@""] != NSOrderedSame) {
     [[(LHBAppDelegate *)[NSApp delegate] homebrewProxy] install:formulaToInstall completion:^(NSString *output){NSLog(@"Output from installation via XPC: %@",output);}];
         [[(LHBAppDelegate *)[NSApp delegate] homebrewProxy] installedFormulaList:^(NSArray *list) {
@@ -40,7 +48,8 @@
         [availableFormulas removeObjectsInArray:[[LHBModel sharedInstance] installedFormulas]];
         [formulaArrayController setContent:availableFormulas];
         //NSLog(@"Array Controller arrangedObjects: %@", [formulaArrayController arrangedObjects]);
-        [availableFormulasTableView reloadData];
+        [_availableFormulasTableView reloadData];
+        
     }];
 }
 
@@ -53,10 +62,10 @@
 
 #pragma mark - NSTableView Delegate
 -(void) tableViewSelectionDidChange:(NSNotification *)notification {
-    if([availableFormulasTableView selectedRow] == -1) {
-        [installButton setEnabled:NO];
+    if([_availableFormulasTableView selectedRow] == -1) {
+        [_installButton setEnabled:NO];
     } else {
-        [installButton setEnabled:YES];
+        [_installButton setEnabled:YES];
     }
 }
 

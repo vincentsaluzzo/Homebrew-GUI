@@ -15,6 +15,7 @@
 -(void)install:(NSString *)formula completion:(void (^)(NSString *))output;
 -(void)uninstall:(NSString *)formula completion:(void (^)(NSString *))output;
 -(void)search:(NSString *)term completion:(void (^)(NSString *))output;
+-(void)update:(void (^)(NSString *))output;
 @end
 
 @interface LLCXPCHomebrewProxy : NSObject <LLCXPCHomebrew>
