@@ -1,4 +1,4 @@
-#Brewery
+#Brewery <img align="right" width="120" height="120" src="https://raw.github.com/flufff42/Brewery/master/Brewery Icon.png">
 
 Brewery is a GUI for the homebrew Package Manager on OS X.
 
